@@ -15,14 +15,14 @@ public class AdminServiceImpl implements AdminService {
 	public void add(Admin admin) {
 		adminmapper.add(admin);
 	};
-	public void delete(int id) {
-		adminmapper.delete(id);
+	public void delete(int aId) {
+		adminmapper.delete(aId);
 	};
 	public void update(Admin admin) {
 		adminmapper.update(admin);
 	};
-	public Admin get(int id) {
-		return adminmapper.get(id);
+	public Admin get(int aId) {
+		return adminmapper.get(aId);
 	};
 	public List<Admin> list() {
 		return adminmapper.list();

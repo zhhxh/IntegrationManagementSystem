@@ -2,60 +2,61 @@ package com.mybean.data;
 
 public class Admin {
 
-	private int id;			//ID
-	private String name;	//姓名
-	private String sex;		//性别
-	private String tel;		//电话
-	private String phoNum;	//手机
-	private String addr;	//地址
-	private String limit;	//权限
-	private String date;	//注册日期
-	public int getId() {
-		return id;
+	private int aId;		//ID
+	private String aName;	//姓名
+	private String aSex;	//性别
+	private String aTel;	//电话
+	private String aPhoNum;	//手机
+	private String aAddr;	//地址
+	private String aLimit;	//权限
+	private String aDate;	//注册日期
+	public int getaId() {
+		return aId;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setaId(int aId) {
+		this.aId = aId;
 	}
-	public String getName() {
-		return name;
+	public String getaName() {
+		return aName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setaName(String aName) {
+		this.aName = aName;
 	}
-	public String getSex() {
-		return sex;
+	public String getaSex() {
+		return aSex;
 	}
-	public void setSex(String sex) {
-		this.sex = sex;
+	public void setaSex(String aSex) {
+		this.aSex = aSex;
 	}
-	public String getTel() {
-		return tel;
+	public String getaTel() {
+		return aTel;
 	}
-	public void setTel(String tel) {
-		this.tel = tel;
+	public void setaTel(String aTel) {
+		this.aTel = aTel;
 	}
-	public String getPhoNum() {
-		return phoNum;
+	public String getaPhoNum() {
+		return aPhoNum;
 	}
-	public void setPhoNum(String phoNum) {
-		this.phoNum = phoNum;
+	public void setaPhoNum(String aPhoNum) {
+		this.aPhoNum = aPhoNum;
 	}
-	public String getAddr() {
-		return addr;
+	public String getaAddr() {
+		return aAddr;
 	}
-	public void setAddr(String addr) {
-		this.addr = addr;
+	public void setaAddr(String aAddr) {
+		this.aAddr = aAddr;
 	}
-	public String getLimit() {
-		return limit;
+	public String getaLimit() {
+		return aLimit;
 	}
-	public void setLimit(String limit) {
-		this.limit = limit;
+	public void setaLimit(String aLimit) {
+		this.aLimit = aLimit;
 	}
-	public String getDate() {
-		return date;
+	public String getaDate() {
+		return aDate;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setaDate(String aDate) {
+		this.aDate = aDate;
 	}
+	
 }
