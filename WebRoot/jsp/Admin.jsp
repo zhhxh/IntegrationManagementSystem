@@ -6,6 +6,7 @@
 <table align='center' border='1' cellspacing='0'>
     <tr>
         <td>id</td>
+        <td>密码</td>
         <td>姓名</td>
         <td>性别</td>
         <td>电话</td>
@@ -17,6 +18,7 @@
     <c:forEach items="${admin}" var="a">
         <tr>
             <td>${a.aId}</td>
+            <td>${a.aPassword}</td>
             <td>${a.aName}</td>
             <td>${a.aSex}</td>
             <td>${a.aTel}</td>

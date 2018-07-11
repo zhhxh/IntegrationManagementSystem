@@ -3,6 +3,7 @@ package com.mybean.data;
 public class Admin {
 
 	private int aId;		//ID
+	private String aPassword;	//姓名
 	private String aName;	//姓名
 	private String aSex;	//性别
 	private String aTel;	//电话
@@ -57,6 +58,12 @@ public class Admin {
 	}
 	public void setaDate(String aDate) {
 		this.aDate = aDate;
+	}
+	public String getaPassword() {
+		return aPassword;
+	}
+	public void setaPassword(String aPassword) {
+		this.aPassword = aPassword;
 	}
 	
 }

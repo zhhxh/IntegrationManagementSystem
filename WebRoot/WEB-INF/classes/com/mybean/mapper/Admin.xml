@@ -5,7 +5,7 @@
     <mapper namespace="com.mybean.mapper.AdminMapper">
     	
         <insert id="add" parameterType="Admin" >
-            insert into admin_info (aId,aName,aSex,aTel,aPhoNum,aAddr,aLimit,aDate) values (#{aId},#{aName},#{aSex},#{aTel},#{aPhoNum},#{aAddr},#{aLimit},#{aDate})   
+            insert into admin_info (aId,aPassword,aName,aSex,aTel,aPhoNum,aAddr,aLimit,aDate) values (#{aId},#{aPassword},#{aName},#{aSex},#{aTel},#{aPhoNum},#{aAddr},#{aLimit},#{aDate})   
         </insert>
          
         <delete id="delete" parameterType="_int" >
@@ -17,7 +17,7 @@
         </select>
  
         <update id="update" parameterType="Admin" >
-            update admin_info set aName=#{aName},aSex=#{aSex},aTel=#{aTel},aPhoNum=#{aPhoNum},aAddr=#{aAddr},aLimit=#{aLimit},aDate=#{aDate}  where aId=#{aId}   
+            update admin_info set aPassword=#{aPassword},aName=#{aName},aSex=#{aSex},aTel=#{aTel},aPhoNum=#{aPhoNum},aAddr=#{aAddr},aLimit=#{aLimit},aDate=#{aDate}  where aId=#{aId}   
         </update>
         <select id="list" resultType="Admin">
             select * from admin_info     
