@@ -19,7 +19,7 @@ public class AdminController {
 	@Autowired
 	AdminService adminservice;
 	
-	@RequestMapping(value="Admin")
+	@RequestMapping("Admin")
 	public ModelAndView Admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		ModelAndView mav = new ModelAndView();
