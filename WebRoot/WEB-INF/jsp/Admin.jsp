@@ -10,8 +10,8 @@
     </tr>
     
         <tr>
-            <td>${Admin.getId()}</td>
-            <td>${Admin.getName()}</td>    
+            <td>${admin.id}</td>
+            <td>${admin.name}</td>    
         </tr>
     
 </table>

@@ -1,6 +1,7 @@
 package com.mybean.controller;
 
-import java.util.List;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,15 +17,13 @@ public class AdminController {
 	@Autowired
 	AdminService adminservice;
 	
-	@RequestMapping("listAdmin")
-	 public ModelAndView listAdmin(){
-        ModelAndView mav = new ModelAndView();
-        Admin admin= adminservice.get(1);
-         
-        // 放入转发参数
-        mav.addObject("Admin", admin);
-        // 放入jsp路径
-        mav.setViewName("listAdmin");
-        return mav;
-    }
+	@RequestMapping(value="Admin")
+	public ModelAndView Admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mav = new ModelAndView();
+		Admin admin= adminservice.get(1);
+		mav.addObject("admin", admin);
+		mav.setViewName("Admin");//返回的文件名
+		return mav;
+		}
 }
