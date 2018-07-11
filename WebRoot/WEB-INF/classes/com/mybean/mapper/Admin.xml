@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+    <mapper namespace="com.mybean.mapper.AdminMapper">
+        <insert id="add" parameterType="Admin" >
+            insert into admin_info (aId,aName,aSex,aTel,aPhoNum,aAddr,aLimit,aDate) values (#{id},#{name},#{sex},#{tel},#{phoNum},#{addr},#{limit},#{date})   
+        </insert>
+         
+        <delete id="delete" parameterType="_int" >
+            delete from admin_info where aId= #{id}  
+        </delete>
+         
+        <select id="get" parameterType="_int" resultType="Admin">
+            select * from admin_info  where aId= #{id}   
+        </select>
+ 
+        <update id="update" parameterType="Admin" >
+            update admin_info set aName=#{name},aSex=#{sex},aTel=#{tel},aPhoNum=#{phoNum},aAddr=#{addr},aLimit=#{limit},aDate=#{date}  where id=#{id}   
+        </update>
+        <select id="list" resultType="Admin">
+            select * from admin_info     
+        </select>    
+    </mapper>
