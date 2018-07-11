@@ -8,10 +8,10 @@
         <td>id</td>
         <td>name</td>
     </tr>
-    
+    <c:forEach items="${admin}" var="a">
         <tr>
-            <td>${admin.id}</td>
-            <td>${admin.name}</td>    
+            <td>${a.id}</td>
+            <td>${a.name}</td>    
         </tr>
-    
+    </c:forEach>
 </table>

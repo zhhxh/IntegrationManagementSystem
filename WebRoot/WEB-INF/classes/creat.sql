@@ -10,3 +10,5 @@ CREATE TABLE `integrationdb`.`admin_info` (
   `aLimit` INT NULL,
   `aDate` DATE NULL,
   PRIMARY KEY (`aId`));
+
+INSERT INTO `integrationdb`.`admin_info` VALUES(1, 'wanghao', '男', '15270496554', '15270496554', '南京东路235号', 0, '2018-07-10')

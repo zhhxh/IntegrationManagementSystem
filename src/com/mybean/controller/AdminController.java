@@ -1,5 +1,7 @@
 package com.mybean.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,7 +23,7 @@ public class AdminController {
 	public ModelAndView Admin(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		ModelAndView mav = new ModelAndView();
-		Admin admin= adminservice.get(1);
+		List<Admin> admin= adminservice.list();
 		mav.addObject("admin", admin);
 		mav.setViewName("Admin");//返回的文件名
 		return mav;
